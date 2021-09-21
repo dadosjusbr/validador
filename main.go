@@ -69,10 +69,10 @@ func main() {
 	}
 
 	// Printing output.
-	out, err := proto.Marshal(&er)
+	b, err := proto.Marshal(&er)
 	if err != nil {
-		err = status.NewError(status.OutputError, fmt.Errorf("error marshaling output:%q", err))
+		err = status.NewError(status.Unknown, fmt.Errorf("error marshalling packaging result (%s):%q", zipName, err))
 		status.ExitFromError(err)
 	}
-	fmt.Printf("%v", out)
+	fmt.Printf("%s", b)
 }
