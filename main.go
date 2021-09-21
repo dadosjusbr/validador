@@ -71,7 +71,7 @@ func main() {
 	// Printing output.
 	b, err := proto.Marshal(&er)
 	if err != nil {
-		err = status.NewError(status.Unknown, fmt.Errorf("error marshalling packaging result (%s):%q", zipName, err))
+		err = status.NewError(status.Unknown, fmt.Errorf("error marshalling output:%q", err))
 		status.ExitFromError(err)
 	}
 	fmt.Printf("%s", b)
