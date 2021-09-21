@@ -1,7 +1,6 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -70,10 +69,10 @@ func main() {
 	}
 
 	// Printing output.
-	out, err := json.MarshalIndent(er, "", "  ")
+	out, err := proto.Marshal(&er)
 	if err != nil {
 		err = status.NewError(status.OutputError, fmt.Errorf("error marshaling output:%q", err))
 		status.ExitFromError(err)
 	}
-	fmt.Print(string(out))
+	fmt.Print(out)
 }
