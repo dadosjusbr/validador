@@ -74,5 +74,5 @@ func main() {
 		err = status.NewError(status.OutputError, fmt.Errorf("error marshaling output:%q", err))
 		status.ExitFromError(err)
 	}
-	fmt.Print(out)
+	fmt.Printf("%v", out)
 }
