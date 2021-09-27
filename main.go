@@ -10,7 +10,7 @@ import (
 	"github.com/dadosjusbr/proto/pipeline"
 	"github.com/frictionlessdata/datapackage-go/datapackage"
 
-	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/encoding/prototext"
 
 	frictionless "github.com/frictionlessdata/tableschema-go/csv"
 )
@@ -25,7 +25,7 @@ func main() {
 		status.ExitFromError(err)
 	}
 	var er pipeline.ResultadoExecucao
-	if err := proto.Unmarshal(in, &er); err != nil {
+	if err := prototext.Unmarshal(in, &er); err != nil {
 		err := status.NewError(status.InvalidInput, fmt.Errorf("error unmarshalling execution result: %q", err))
 		status.ExitFromError(err)
 	}
@@ -69,7 +69,7 @@ func main() {
 	}
 
 	// Printing output.
-	b, err := proto.Marshal(&er)
+	b, err := prototext.Marshal(&er)
 	if err != nil {
 		err = status.NewError(status.Unknown, fmt.Errorf("error marshalling output:%q", err))
 		status.ExitFromError(err)
