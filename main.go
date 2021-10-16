@@ -59,6 +59,16 @@ func main() {
 				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
 				status.ExitFromError(err)
 			}
+		case "metadados":
+			if err := pkg.GetResource(v).Cast(&[]csv.Metadados_CSV{}, frictionless.LoadHeaders()); err != nil {
+				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
+				status.ExitFromError(err)
+			}
+		case "contra_cheque":
+			if err := pkg.GetResource(v).Cast(&[]csv.ContraCheque_CSV{}, frictionless.LoadHeaders()); err != nil {
+				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
+				status.ExitFromError(err)
+			}
 		default:
 			if err := pkg.GetResource(v).Cast(&[]csv.ContraCheque_CSV{}, frictionless.LoadHeaders()); err != nil {
 				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
