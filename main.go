@@ -6,7 +6,6 @@ import (
 	"os"
 
 	"github.com/dadosjusbr/coletores/status"
-	"github.com/dadosjusbr/proto/csv"
 	"github.com/dadosjusbr/proto/pipeline"
 	"github.com/frictionlessdata/datapackage-go/datapackage"
 
@@ -50,27 +49,27 @@ func main() {
 
 		switch v {
 		case "coleta":
-			if err := pkg.GetResource(v).Cast(&[]csv.Coleta_CSV{}, frictionless.LoadHeaders()); err != nil {
+			if err := pkg.GetResource(v).Cast(&[]Coleta_CSV{}, frictionless.LoadHeaders()); err != nil {
 				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
 				status.ExitFromError(err)
 			}
 		case "remuneracao":
-			if err := pkg.GetResource(v).Cast(&[]csv.Remuneracao_CSV{}, frictionless.LoadHeaders()); err != nil {
+			if err := pkg.GetResource(v).Cast(&[]Remuneracao_CSV{}, frictionless.LoadHeaders()); err != nil {
 				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
 				status.ExitFromError(err)
 			}
 		case "metadados":
-			if err := pkg.GetResource(v).Cast(&[]csv.Metadados_CSV{}, frictionless.LoadHeaders()); err != nil {
+			if err := pkg.GetResource(v).Cast(&[]Metadados_CSV{}, frictionless.LoadHeaders()); err != nil {
 				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
 				status.ExitFromError(err)
 			}
 		case "contra_cheque":
-			if err := pkg.GetResource(v).Cast(&[]csv.ContraCheque_CSV{}, frictionless.LoadHeaders()); err != nil {
+			if err := pkg.GetResource(v).Cast(&[]ContraCheque_CSV{}, frictionless.LoadHeaders()); err != nil {
 				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
 				status.ExitFromError(err)
 			}
 		default:
-			if err := pkg.GetResource(v).Cast(&[]csv.ContraCheque_CSV{}, frictionless.LoadHeaders()); err != nil {
+			if err := pkg.GetResource(v).Cast(&[]ContraCheque_CSV{}, frictionless.LoadHeaders()); err != nil {
 				err = status.NewError(status.InvalidInput, fmt.Errorf("error validating datapackage (%s):%q", er.Pr.Pacote, err))
 				status.ExitFromError(err)
 			}
