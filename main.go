@@ -27,7 +27,7 @@ func main() {
 
 	// Loading and validating package.xs
 	if _, err := datapackage.Load(er.Pr.Pacote); err != nil {
-		err = status.NewError(status.DataUnavailable, fmt.Errorf("error loading datapackage (%s):%q", er.Pr.Pacote, err))
+		err = status.NewError(status.InvalidInput, fmt.Errorf("error loading datapackage (%s):%q", er.Pr.Pacote, err))
 		status.ExitFromError(err)
 	}
 
