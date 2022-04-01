@@ -8,6 +8,10 @@ ENV GO111MODULE=on \
     GOOS=linux \
     GOARCH=amd64
 
+# Install important deps needed for compiling in go1.8+
+RUN apk update
+RUN apk add git
+
 # Move to working directory /build
 WORKDIR /build
 
