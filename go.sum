@@ -8,6 +8,8 @@ github.com/dadosjusbr/proto v0.0.0-20220304160723-47e93e9d97b5/go.mod h1:a04KL3n
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/frictionlessdata/datapackage-go v0.0.0-20220401175255-e613d5964077 h1:a5tSLvMPGCI1AwqrmVSJqwxeOdCDVMLD12HdrfFeAxs=
 github.com/frictionlessdata/datapackage-go v0.0.0-20220401175255-e613d5964077/go.mod h1:bqt5SzFjnpsZNw4kXO4CFIwH9vV5LhEdQikftJ0uJ5M=
+github.com/frictionlessdata/datapackage-go v1.0.2 h1:RpPtBEz30fMLccVwSrQRWMWtLhE1O2OIGvgz4/jMxOc=
+github.com/frictionlessdata/datapackage-go v1.0.2/go.mod h1:bqt5SzFjnpsZNw4kXO4CFIwH9vV5LhEdQikftJ0uJ5M=
 github.com/frictionlessdata/tableschema-go v1.1.4-0.20220401172006-6cc5f3b2411c h1:7S5F4VDf8vkLL3egYLWobmq1FbZb7ig33IbliL7Tr/M=
 github.com/frictionlessdata/tableschema-go v1.1.4-0.20220401172006-6cc5f3b2411c/go.mod h1:B+DhLlwjCf6p6FqVkqpdYyAIy7L8jHCaxa2wFaqpYdc=
 github.com/gocarina/gocsv v0.0.0-20200827134620-49f5c3fa2b3e/go.mod h1:5YoVOkjYAQumqlV356Hj3xeYh4BdZuLE0/nRkf2NKkI=

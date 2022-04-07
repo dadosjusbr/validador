@@ -10,7 +10,7 @@ require (
 )
 
 require (
-	github.com/frictionlessdata/datapackage-go v0.0.0-20220401175255-e613d5964077 // indirect
+	github.com/frictionlessdata/datapackage-go v1.0.2 // indirect
 	github.com/frictionlessdata/tableschema-go v1.1.4-0.20220401172006-6cc5f3b2411c // indirect
 	github.com/gocarina/gocsv v0.0.0-20220310154401-d4df709ca055 // indirect
 	github.com/kr/text v0.2.0 // indirect
