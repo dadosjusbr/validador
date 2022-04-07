@@ -1,13 +1,11 @@
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/dadosjusbr/coletores v0.0.0-20210928113650-4c03e4fa3b74 h1:biTIncJC0XYYqAVEJHJRI5dTUgEp9K7AfTrUj9JzvNc=
 github.com/dadosjusbr/coletores v0.0.0-20210928113650-4c03e4fa3b74/go.mod h1:m9opDykSJIwaf+veICpleWMranaaWEbx5RNQhKZAgXU=
-github.com/dadosjusbr/datapackage v0.0.0-20220406131212-c186d4b60a0d h1:dz7CLCvjgwUs+Zv4GdHwV1Jm24rURF6zZJn5Rmr6uwo=
-github.com/dadosjusbr/datapackage v0.0.0-20220406131212-c186d4b60a0d/go.mod h1:txL651snDeAVtjdzPrgG6FZnDR0Sar041HBxQ2rPJFs=
+github.com/dadosjusbr/datapackage v0.0.0-20220407133248-f032e7adfc33 h1:y5E5fZ4XHQ3Y6CsyjMtMftAFzCgRpT2sc2x3jwXilRE=
+github.com/dadosjusbr/datapackage v0.0.0-20220407133248-f032e7adfc33/go.mod h1:+WRg2FEFtE8A09VeJnbodm23EDOCuXsLontCAwejpqc=
 github.com/dadosjusbr/proto v0.0.0-20220304160723-47e93e9d97b5 h1:T1vX+7BhXkkYRZnRdla0Z8Uu9Emww7x2jNbowmbtOwM=
 github.com/dadosjusbr/proto v0.0.0-20220304160723-47e93e9d97b5/go.mod h1:a04KL3nn5wvlJTuoTYggaeokQi3njDyt9L7Ss9EQEJQ=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
-github.com/frictionlessdata/datapackage-go v0.0.0-20220401175255-e613d5964077 h1:a5tSLvMPGCI1AwqrmVSJqwxeOdCDVMLD12HdrfFeAxs=
-github.com/frictionlessdata/datapackage-go v0.0.0-20220401175255-e613d5964077/go.mod h1:bqt5SzFjnpsZNw4kXO4CFIwH9vV5LhEdQikftJ0uJ5M=
 github.com/frictionlessdata/datapackage-go v1.0.2 h1:RpPtBEz30fMLccVwSrQRWMWtLhE1O2OIGvgz4/jMxOc=
 github.com/frictionlessdata/datapackage-go v1.0.2/go.mod h1:bqt5SzFjnpsZNw4kXO4CFIwH9vV5LhEdQikftJ0uJ5M=
 github.com/frictionlessdata/tableschema-go v1.1.4-0.20220401172006-6cc5f3b2411c h1:7S5F4VDf8vkLL3egYLWobmq1FbZb7ig33IbliL7Tr/M=
