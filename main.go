@@ -5,9 +5,9 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/dadosjusbr/coletores/status"
 	"github.com/dadosjusbr/datapackage"
 	"github.com/dadosjusbr/proto/pipeline"
+	"github.com/dadosjusbr/status"
 
 	"google.golang.org/protobuf/encoding/prototext"
 )
@@ -26,7 +26,7 @@ func main() {
 	}
 
 	// Loading and validating package.xs
-	if _, err := datapackage.Load(er.Pr.Pacote); err != nil {
+	if _, err := datapackage.LoadV2(er.Pr.Pacote); err != nil {
 		err = status.NewError(status.InvalidInput, fmt.Errorf("error loading datapackage (%s):%q", er.Pr.Pacote, err))
 		status.ExitFromError(err)
 	}
