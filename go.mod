@@ -3,13 +3,13 @@ module validador
 go 1.18
 
 require (
-	github.com/dadosjusbr/coletores v0.0.0-20210928113650-4c03e4fa3b74
-	github.com/dadosjusbr/datapackage v0.0.0-20221212104130-d1a981103f1f
+	github.com/dadosjusbr/datapackage v0.0.0-20230818123816-40ae9a2f981f
 	github.com/dadosjusbr/proto v0.0.0-20221212025627-91c60aa3cd12
 	google.golang.org/protobuf v1.28.1
 )
 
 require (
+	github.com/dadosjusbr/status v0.0.0-20230428151814-b605fe0e598f
 	github.com/frictionlessdata/datapackage-go v1.0.4 // indirect
 	github.com/frictionlessdata/tableschema-go v1.5.2 // indirect
 	github.com/gocarina/gocsv v0.0.0-20221212090504-363f27c9ceb6 // indirect
