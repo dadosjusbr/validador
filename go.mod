@@ -3,7 +3,7 @@ module validador
 go 1.18
 
 require (
-	github.com/dadosjusbr/datapackage v0.0.0-20230818123816-40ae9a2f981f
+	github.com/dadosjusbr/datapackage v0.0.0-20240320203926-5f369dadd3a5
 	github.com/dadosjusbr/proto v0.0.0-20221212025627-91c60aa3cd12
 	google.golang.org/protobuf v1.28.1
 )
